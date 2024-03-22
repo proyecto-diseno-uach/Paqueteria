@@ -31,12 +31,16 @@ public class Inicio extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         RastrePaque = new javax.swing.JPanel();
         lbl_rastrepaque = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         ActuaEstad = new javax.swing.JPanel();
         lbl_actuaestad = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         RegisPaque = new javax.swing.JPanel();
         lbl_regispaque = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         Paqueregis = new javax.swing.JPanel();
         lbl_paqueregis = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 255, 102));
@@ -57,6 +61,8 @@ public class Inicio extends javax.swing.JFrame {
         lbl_rastrepaque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_rastrepaque.setText("Rastrear Paquete");
 
+        jLabel4.setText("jLabel4");
+
         javax.swing.GroupLayout RastrePaqueLayout = new javax.swing.GroupLayout(RastrePaque);
         RastrePaque.setLayout(RastrePaqueLayout);
         RastrePaqueLayout.setHorizontalGroup(
@@ -65,11 +71,17 @@ public class Inicio extends javax.swing.JFrame {
                 .addGap(19, 19, 19)
                 .addComponent(lbl_rastrepaque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(19, 19, 19))
+            .addGroup(RastrePaqueLayout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RastrePaqueLayout.setVerticalGroup(
             RastrePaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RastrePaqueLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(24, 24, 24)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lbl_rastrepaque)
                 .addContainerGap())
         );
@@ -89,6 +101,8 @@ public class Inicio extends javax.swing.JFrame {
         lbl_actuaestad.setText("<html><p style='text-align: center'>Actualizar Estado de Paquete</p><html>");
         lbl_actuaestad.setToolTipText("Actualizar Estado de Paquete");
 
+        jLabel3.setText("jLabel3");
+
         javax.swing.GroupLayout ActuaEstadLayout = new javax.swing.GroupLayout(ActuaEstad);
         ActuaEstad.setLayout(ActuaEstadLayout);
         ActuaEstadLayout.setHorizontalGroup(
@@ -97,12 +111,18 @@ public class Inicio extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(lbl_actuaestad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(ActuaEstadLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         ActuaEstadLayout.setVerticalGroup(
             ActuaEstadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ActuaEstadLayout.createSequentialGroup()
-                .addGap(73, 73, 73)
-                .addComponent(lbl_actuaestad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(23, 23, 23)
+                .addComponent(jLabel3)
+                .addGap(34, 34, 34)
+                .addComponent(lbl_actuaestad, javax.swing.GroupLayout.DEFAULT_SIZE, 21, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -118,6 +138,8 @@ public class Inicio extends javax.swing.JFrame {
         lbl_regispaque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_regispaque.setText("Registrar Paquete");
 
+        jLabel2.setText("jLabel2");
+
         javax.swing.GroupLayout RegisPaqueLayout = new javax.swing.GroupLayout(RegisPaque);
         RegisPaque.setLayout(RegisPaqueLayout);
         RegisPaqueLayout.setHorizontalGroup(
@@ -126,11 +148,17 @@ public class Inicio extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(lbl_regispaque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(RegisPaqueLayout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RegisPaqueLayout.setVerticalGroup(
             RegisPaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RegisPaqueLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(17, 17, 17)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lbl_regispaque)
                 .addContainerGap())
         );
@@ -147,19 +175,26 @@ public class Inicio extends javax.swing.JFrame {
         lbl_paqueregis.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_paqueregis.setText("Paquetes Registrados");
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Adobe Express 2024-03-22 1.23.24.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+
         javax.swing.GroupLayout PaqueregisLayout = new javax.swing.GroupLayout(Paqueregis);
         Paqueregis.setLayout(PaqueregisLayout);
         PaqueregisLayout.setHorizontalGroup(
             PaqueregisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PaqueregisLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lbl_paqueregis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(PaqueregisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbl_paqueregis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
         PaqueregisLayout.setVerticalGroup(
             PaqueregisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PaqueregisLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lbl_paqueregis)
                 .addContainerGap())
         );
@@ -287,6 +322,10 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JPanel Paqueregis;
     private javax.swing.JPanel RastrePaque;
     private javax.swing.JPanel RegisPaque;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JLabel lbl_actuaestad;
