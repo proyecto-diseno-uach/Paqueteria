@@ -40,7 +40,7 @@ public class Inicio extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         Paqueregis = new javax.swing.JPanel();
         lbl_paqueregis = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 255, 102));
@@ -51,6 +51,7 @@ public class Inicio extends javax.swing.JFrame {
 
         RastrePaque.setBackground(new java.awt.Color(255, 255, 0));
         RastrePaque.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        RastrePaque.setPreferredSize(new java.awt.Dimension(150, 50));
         RastrePaque.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 RastrePaqueMouseClicked(evt);
@@ -59,7 +60,7 @@ public class Inicio extends javax.swing.JFrame {
 
         lbl_rastrepaque.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lbl_rastrepaque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_rastrepaque.setText("Rastrear Paquete");
+        lbl_rastrepaque.setText("<html><p style='text-align: center'>Rastrear Paquete</p><html>");
 
         jLabel4.setText("jLabel4");
 
@@ -69,17 +70,17 @@ public class Inicio extends javax.swing.JFrame {
             RastrePaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RastrePaqueLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(lbl_rastrepaque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbl_rastrepaque, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE)
                 .addGap(19, 19, 19))
             .addGroup(RastrePaqueLayout.createSequentialGroup()
-                .addGap(44, 44, 44)
+                .addGap(52, 52, 52)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RastrePaqueLayout.setVerticalGroup(
             RastrePaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RastrePaqueLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addContainerGap()
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lbl_rastrepaque)
@@ -90,6 +91,7 @@ public class Inicio extends javax.swing.JFrame {
         ActuaEstad.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         ActuaEstad.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         ActuaEstad.setFocusCycleRoot(true);
+        ActuaEstad.setPreferredSize(new java.awt.Dimension(150, 50));
         ActuaEstad.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ActuaEstadMouseClicked(evt);
@@ -109,25 +111,26 @@ public class Inicio extends javax.swing.JFrame {
             ActuaEstadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ActuaEstadLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lbl_actuaestad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(ActuaEstadLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(ActuaEstadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbl_actuaestad, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
+                    .addGroup(ActuaEstadLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         ActuaEstadLayout.setVerticalGroup(
             ActuaEstadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ActuaEstadLayout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addContainerGap()
                 .addComponent(jLabel3)
-                .addGap(34, 34, 34)
-                .addComponent(lbl_actuaestad, javax.swing.GroupLayout.DEFAULT_SIZE, 21, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbl_actuaestad)
                 .addContainerGap())
         );
 
         RegisPaque.setBackground(new java.awt.Color(153, 102, 0));
         RegisPaque.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        RegisPaque.setPreferredSize(new java.awt.Dimension(150, 50));
         RegisPaque.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 RegisPaqueMouseClicked(evt);
@@ -136,7 +139,7 @@ public class Inicio extends javax.swing.JFrame {
 
         lbl_regispaque.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lbl_regispaque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_regispaque.setText("Registrar Paquete");
+        lbl_regispaque.setText("<html><p style='text-align: center'>Registrar Paquete</p><html>");
 
         jLabel2.setText("jLabel2");
 
@@ -146,17 +149,18 @@ public class Inicio extends javax.swing.JFrame {
             RegisPaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RegisPaqueLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lbl_regispaque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(RegisPaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbl_regispaque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(RegisPaqueLayout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 51, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(RegisPaqueLayout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RegisPaqueLayout.setVerticalGroup(
             RegisPaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RegisPaqueLayout.createSequentialGroup()
-                .addGap(17, 17, 17)
+                .addContainerGap()
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lbl_regispaque)
@@ -173,10 +177,9 @@ public class Inicio extends javax.swing.JFrame {
 
         lbl_paqueregis.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lbl_paqueregis.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_paqueregis.setText("Paquetes Registrados");
+        lbl_paqueregis.setText("<html><p style='text-align: center'>Paquetes Registrados</p><html>");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Adobe Express 2024-03-22 1.23.24.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
+        jLabel5.setText("jLabel5");
 
         javax.swing.GroupLayout PaqueregisLayout = new javax.swing.GroupLayout(Paqueregis);
         Paqueregis.setLayout(PaqueregisLayout);
@@ -186,15 +189,18 @@ public class Inicio extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(PaqueregisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lbl_paqueregis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addGroup(PaqueregisLayout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 51, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         PaqueregisLayout.setVerticalGroup(
             PaqueregisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PaqueregisLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addContainerGap()
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addComponent(lbl_paqueregis)
                 .addContainerGap())
         );
@@ -205,13 +211,13 @@ public class Inicio extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(11, 11, 11)
-                .addComponent(Paqueregis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Paqueregis, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(RegisPaque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(RegisPaque, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(ActuaEstad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ActuaEstad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(RastrePaque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(RastrePaque, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
                 .addGap(8, 8, 8))
         );
         jPanel6Layout.setVerticalGroup(
@@ -219,10 +225,10 @@ public class Inicio extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(13, 13, 13)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ActuaEstad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(RegisPaque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Paqueregis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(RastrePaque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(ActuaEstad, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
+                    .addComponent(RegisPaque, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
+                    .addComponent(Paqueregis, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
+                    .addComponent(RastrePaque, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE))
                 .addGap(13, 13, 13))
         );
 
@@ -258,15 +264,15 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void RastrePaqueMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RastrePaqueMouseClicked
-        PRegistrados pRegistrados = new PRegistrados();
-        pRegistrados.setVisible(true);
-        pRegistrados.requestFocus();
+        Ltiempo2 ltiempo2 = new Ltiempo2();
+        ltiempo2.setVisible(true);
+        ltiempo2.requestFocus();
     }//GEN-LAST:event_RastrePaqueMouseClicked
 
     private void ActuaEstadMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ActuaEstadMouseClicked
-        PRegistrados pRegistrados = new PRegistrados();
-        pRegistrados.setVisible(true);
-        pRegistrados.requestFocus();
+        ActuPaquete actuPaquete = new ActuPaquete();
+        actuPaquete.setVisible(true);
+        actuPaquete.requestFocus();
     }//GEN-LAST:event_ActuaEstadMouseClicked
 
     private void PaqueregisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PaqueregisMouseClicked
@@ -276,9 +282,9 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_PaqueregisMouseClicked
 
     private void RegisPaqueMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegisPaqueMouseClicked
-        PRegistrados pRegistrados = new PRegistrados();
-        pRegistrados.setVisible(true);
-        pRegistrados.requestFocus();
+        NUpaquete nUpaquetes = new NUpaquete();
+        nUpaquetes.setVisible(true);
+        nUpaquetes.requestFocus();
     }//GEN-LAST:event_RegisPaqueMouseClicked
 
     /**
@@ -322,10 +328,10 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JPanel Paqueregis;
     private javax.swing.JPanel RastrePaque;
     private javax.swing.JPanel RegisPaque;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JLabel lbl_actuaestad;
