@@ -93,6 +93,7 @@ public class NUpaquete extends javax.swing.JFrame {
 
         jLabel4.setText("-Estado:");
 
+        jTextField1.setText("Chihuahua");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -101,8 +102,16 @@ public class NUpaquete extends javax.swing.JFrame {
 
         jLabel5.setText("-Municipio:");
 
+        jTextField2.setText("Chihuahua");
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+
         jLabel6.setText("-Ciudad/Localidad:");
 
+        jTextField3.setText("Chihuahua");
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
@@ -111,13 +120,21 @@ public class NUpaquete extends javax.swing.JFrame {
 
         jLabel7.setText("-Asentamiento/Colonia/Fraccionamiento:");
 
-        jLabel8.setText("-Fecha de Envio:");
+        jLabel8.setText("-Fecha y Hora Estimada de Envio:");
+
+        jTextField4.setText("San Juan");
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel9.setText("Detalles Destino:");
 
         jLabel10.setText("-Estado");
 
+        jTextField6.setText("Chihuahua");
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField6ActionPerformed(evt);
@@ -135,19 +152,24 @@ public class NUpaquete extends javax.swing.JFrame {
 
         jLabel11.setText("-Asentamiento/Colonia/Fraccionamiento:");
 
+        jTextField7.setText("San Juan");
+
         jLabel12.setText("-Municipio:");
 
         jLabel13.setText("-Ciudad/Localidad:");
 
         jLabel14.setText("Calle y Número:");
 
-        jLabel15.setText("-Fecha Estimada de Entrega:");
+        jLabel15.setText("-Fecha y HoraEstimada de Entrega:");
 
+        jTextField8.setText("Chihuahua");
         jTextField8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField8ActionPerformed(evt);
             }
         });
+
+        jTextField9.setText("Chihuahua");
 
         jTextField10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -204,10 +226,10 @@ public class NUpaquete extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jTextField2)
                                             .addComponent(jComboBox2, 0, 222, Short.MAX_VALUE)
-                                            .addComponent(jLabel12)))
+                                            .addComponent(jLabel12)
+                                            .addComponent(jLabel8)))
                                     .addGroup(jPanel2Layout.createSequentialGroup()
                                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                             .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -219,7 +241,7 @@ public class NUpaquete extends javax.swing.JFrame {
                                             .addComponent(jTextField10)
                                             .addGroup(jPanel2Layout.createSequentialGroup()
                                                 .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(0, 0, Short.MAX_VALUE)))))
+                                                .addGap(0, 132, Short.MAX_VALUE)))))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE)
@@ -350,6 +372,14 @@ public class NUpaquete extends javax.swing.JFrame {
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
 
     /**
      * @param args the command line arguments

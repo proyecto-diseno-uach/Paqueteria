@@ -50,6 +50,11 @@ public class PRegistrados extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(255, 51, 0));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("X");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -62,7 +67,7 @@ public class PRegistrados extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 542, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 615, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -82,14 +87,25 @@ public class PRegistrados extends javax.swing.JFrame {
                 {null, null, null},
                 {null, null, null},
                 {null, null, null},
-                {null, null, null},
                 {null, null, null}
             },
             new String [] {
-                "Paquete", "Estado", "Fecha de Actualización"
+                "Paquete", "Estado", "Fecha y Hora de Actualización"
             }
         ));
+        tablaPaquetes.setColumnSelectionAllowed(true);
+        tablaPaquetes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tablaPaquetesMouseClicked(evt);
+            }
+        });
+        tablaPaquetes.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                tablaPaquetesKeyPressed(evt);
+            }
+        });
         jScrollPane1.setViewportView(tablaPaquetes);
+        tablaPaquetes.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -130,6 +146,18 @@ public class PRegistrados extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void tablaPaquetesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablaPaquetesMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tablaPaquetesMouseClicked
+
+    private void tablaPaquetesKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tablaPaquetesKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tablaPaquetesKeyPressed
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        dispose();
+    }//GEN-LAST:event_jButton1MouseClicked
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
@@ -142,10 +170,14 @@ public class PRegistrados extends javax.swing.JFrame {
     private void cargarDatosFalsos() {
        String encabezado[] = new String[]{"Paquete", "Estado", "Fecha"};
        DefaultTableModel tableModel = new DefaultTableModel(encabezado, 0);
-       tableModel.addRow(new String[]{"7346873", "Registrado", "3/mar/24"});
-       tableModel.addRow(new String[]{"7357773", "En viaje", "6/mar/24"});
-       tableModel.addRow(new String[]{"5675900", "Perdido", "3/feb/24"});
+       tableModel.addRow(new String[]{"9a0a3ce1-27f5-44db-aa38-a08dbfa5676b", "En trayecto", "25/02/2024  16:15:00"});
+       tableModel.addRow(new String[]{"9a0a3ce1-27f5-44db-aa38-a08dbfa5676b", "En trayecto", "25/02/2024  16:15:00"});
+       tableModel.addRow(new String[]{"9a0a3ce1-27f5-44db-aa38-a08dbfa5676b", "En trayecto", "25/02/2024  16:15:00"});
+       tableModel.addRow(new String[]{"9a0a3ce1-27f5-44db-aa38-a08dbfa5676b", "En trayecto", "25/02/2024  16:15:00"});
+       tableModel.addRow(new String[]{"9a0a3ce1-27f5-44db-aa38-a08dbfa5676b", "En trayecto", "25/02/2024  16:15:00"});
+       tableModel.addRow(new String[]{"9a0a3ce1-27f5-44db-aa38-a08dbfa5676b", "En trayecto", "25/02/2024  16:15:00"});
+       tableModel.addRow(new String[]{"9a0a3ce1-27f5-44db-aa38-a08dbfa5676b", "En trayecto", "25/02/2024  16:15:00"});
        tablaPaquetes.setModel(tableModel);
-       tableModel.removeRow(2);
+       //tableModel.removeRow(2);
     }
 }
