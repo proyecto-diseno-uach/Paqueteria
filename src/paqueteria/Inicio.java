@@ -68,7 +68,7 @@ public class Inicio extends javax.swing.JFrame {
         lbl_rastrepaque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_rastrepaque.setText("<html><p style='text-align: center'>Rastrear Paquete</p><html>");
 
-        jLabel4.setText("jLabel4");
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Rastrear paquete.png"))); // NOI18N
 
         javax.swing.GroupLayout RastrePaqueLayout = new javax.swing.GroupLayout(RastrePaque);
         RastrePaque.setLayout(RastrePaqueLayout);
@@ -76,19 +76,19 @@ public class Inicio extends javax.swing.JFrame {
             RastrePaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RastrePaqueLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(lbl_rastrepaque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbl_rastrepaque, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
                 .addGap(19, 19, 19))
             .addGroup(RastrePaqueLayout.createSequentialGroup()
-                .addGap(52, 52, 52)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(100, 100, 100)
+                .addComponent(jLabel4)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RastrePaqueLayout.setVerticalGroup(
             RastrePaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RastrePaqueLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(90, 90, 90)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
                 .addComponent(lbl_rastrepaque)
                 .addContainerGap())
         );
@@ -113,7 +113,7 @@ public class Inicio extends javax.swing.JFrame {
         lbl_actuaestad.setText("<html><p style='text-align: center'>Actualizar Estado de Paquete</p><html>");
         lbl_actuaestad.setToolTipText("Actualizar Estado de Paquete");
 
-        jLabel3.setText("jLabel3");
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Actualizar estado de paquete.png"))); // NOI18N
 
         javax.swing.GroupLayout ActuaEstadLayout = new javax.swing.GroupLayout(ActuaEstad);
         ActuaEstad.setLayout(ActuaEstadLayout);
@@ -121,19 +121,18 @@ public class Inicio extends javax.swing.JFrame {
             ActuaEstadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ActuaEstadLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(ActuaEstadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_actuaestad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(ActuaEstadLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addComponent(lbl_actuaestad, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE))
+            .addGroup(ActuaEstadLayout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(jLabel3)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         ActuaEstadLayout.setVerticalGroup(
             ActuaEstadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ActuaEstadLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(73, 73, 73)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
                 .addComponent(lbl_actuaestad)
                 .addContainerGap())
         );
@@ -156,6 +155,7 @@ public class Inicio extends javax.swing.JFrame {
         lbl_regispaque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_regispaque.setText("<html><p style='text-align: center'>Registrar Paquete</p><html>");
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Registrar paquete.png"))); // NOI18N
         jLabel2.setText("jLabel2");
 
         javax.swing.GroupLayout RegisPaqueLayout = new javax.swing.GroupLayout(RegisPaque);
@@ -164,19 +164,19 @@ public class Inicio extends javax.swing.JFrame {
             RegisPaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RegisPaqueLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lbl_regispaque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbl_regispaque, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RegisPaqueLayout.createSequentialGroup()
-                .addContainerGap(146, Short.MAX_VALUE)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(73, 73, 73))
+            .addGroup(RegisPaqueLayout.createSequentialGroup()
+                .addGap(103, 103, 103)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         RegisPaqueLayout.setVerticalGroup(
             RegisPaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RegisPaqueLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(85, 85, 85)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
                 .addComponent(lbl_regispaque)
                 .addContainerGap())
         );
@@ -199,6 +199,7 @@ public class Inicio extends javax.swing.JFrame {
         lbl_paqueregis.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_paqueregis.setText("<html><p style='text-align: center'>Paquetes Registrados</p><html>");
 
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Paquetes registrados.png"))); // NOI18N
         jLabel5.setText("jLabel5");
 
         javax.swing.GroupLayout PaqueregisLayout = new javax.swing.GroupLayout(Paqueregis);
@@ -207,20 +208,19 @@ public class Inicio extends javax.swing.JFrame {
             PaqueregisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PaqueregisLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(PaqueregisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_paqueregis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(PaqueregisLayout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addComponent(lbl_paqueregis, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(PaqueregisLayout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PaqueregisLayout.setVerticalGroup(
             PaqueregisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PaqueregisLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(91, 91, 91)
                 .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
                 .addComponent(lbl_paqueregis)
                 .addContainerGap())
         );
