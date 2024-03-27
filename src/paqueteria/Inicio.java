@@ -30,9 +30,6 @@ public class Inicio extends javax.swing.JFrame {
 
         jPanel3 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
-        RastrePaque = new javax.swing.JPanel();
-        lbl_rastrepaque = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         ActuaEstad = new javax.swing.JPanel();
         lbl_actuaestad = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -42,6 +39,9 @@ public class Inicio extends javax.swing.JFrame {
         Paqueregis = new javax.swing.JPanel();
         lbl_paqueregis = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        RastrePaque = new javax.swing.JPanel();
+        lbl_rastrepaque = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 255, 102));
@@ -51,49 +51,6 @@ public class Inicio extends javax.swing.JFrame {
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 42, 42));
-
-        RastrePaque.setBackground(new java.awt.Color(255, 255, 0));
-        RastrePaque.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        RastrePaque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        RastrePaque.setMaximumSize(new java.awt.Dimension(260, 260));
-        RastrePaque.setMinimumSize(new java.awt.Dimension(260, 260));
-        RastrePaque.setPreferredSize(new java.awt.Dimension(260, 260));
-        RastrePaque.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                RastrePaqueMouseClicked(evt);
-            }
-        });
-
-        lbl_rastrepaque.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        lbl_rastrepaque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_rastrepaque.setText("<html><p style='text-align: center'>Rastrear Paquete</p><html>");
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Rastrear paquete.png"))); // NOI18N
-
-        javax.swing.GroupLayout RastrePaqueLayout = new javax.swing.GroupLayout(RastrePaque);
-        RastrePaque.setLayout(RastrePaqueLayout);
-        RastrePaqueLayout.setHorizontalGroup(
-            RastrePaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RastrePaqueLayout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(lbl_rastrepaque, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
-                .addGap(19, 19, 19))
-            .addGroup(RastrePaqueLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
-                .addComponent(jLabel4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        RastrePaqueLayout.setVerticalGroup(
-            RastrePaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RastrePaqueLayout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
-                .addComponent(lbl_rastrepaque)
-                .addContainerGap())
-        );
-
-        jPanel6.add(RastrePaque);
 
         ActuaEstad.setBackground(new java.awt.Color(51, 255, 51));
         ActuaEstad.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -107,35 +64,22 @@ public class Inicio extends javax.swing.JFrame {
                 ActuaEstadMouseClicked(evt);
             }
         });
+        ActuaEstad.setLayout(new java.awt.GridBagLayout());
 
         lbl_actuaestad.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lbl_actuaestad.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_actuaestad.setText("<html><p style='text-align: center'>Actualizar Estado de Paquete</p><html>");
         lbl_actuaestad.setToolTipText("Actualizar Estado de Paquete");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        ActuaEstad.add(lbl_actuaestad, gridBagConstraints);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Actualizar estado de paquete.png"))); // NOI18N
-
-        javax.swing.GroupLayout ActuaEstadLayout = new javax.swing.GroupLayout(ActuaEstad);
-        ActuaEstad.setLayout(ActuaEstadLayout);
-        ActuaEstadLayout.setHorizontalGroup(
-            ActuaEstadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ActuaEstadLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lbl_actuaestad, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE))
-            .addGroup(ActuaEstadLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
-                .addComponent(jLabel3)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        ActuaEstadLayout.setVerticalGroup(
-            ActuaEstadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ActuaEstadLayout.createSequentialGroup()
-                .addGap(73, 73, 73)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
-                .addComponent(lbl_actuaestad)
-                .addContainerGap())
-        );
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        ActuaEstad.add(jLabel3, gridBagConstraints);
 
         jPanel6.add(ActuaEstad);
 
@@ -150,36 +94,21 @@ public class Inicio extends javax.swing.JFrame {
                 RegisPaqueMouseClicked(evt);
             }
         });
+        RegisPaque.setLayout(new java.awt.GridBagLayout());
 
         lbl_regispaque.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lbl_regispaque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_regispaque.setText("<html><p style='text-align: center'>Registrar Paquete</p><html>");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        RegisPaque.add(lbl_regispaque, gridBagConstraints);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Registrar paquete.png"))); // NOI18N
-        jLabel2.setText("jLabel2");
-
-        javax.swing.GroupLayout RegisPaqueLayout = new javax.swing.GroupLayout(RegisPaque);
-        RegisPaque.setLayout(RegisPaqueLayout);
-        RegisPaqueLayout.setHorizontalGroup(
-            RegisPaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(RegisPaqueLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lbl_regispaque, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(RegisPaqueLayout.createSequentialGroup()
-                .addGap(103, 103, 103)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        RegisPaqueLayout.setVerticalGroup(
-            RegisPaqueLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RegisPaqueLayout.createSequentialGroup()
-                .addGap(85, 85, 85)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
-                .addComponent(lbl_regispaque)
-                .addContainerGap())
-        );
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        RegisPaque.add(jLabel2, gridBagConstraints);
 
         jPanel6.add(RegisPaque);
 
@@ -194,38 +123,55 @@ public class Inicio extends javax.swing.JFrame {
                 PaqueregisMouseClicked(evt);
             }
         });
+        Paqueregis.setLayout(new java.awt.GridBagLayout());
 
         lbl_paqueregis.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lbl_paqueregis.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_paqueregis.setText("<html><p style='text-align: center'>Paquetes Registrados</p><html>");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        Paqueregis.add(lbl_paqueregis, gridBagConstraints);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Paquetes registrados.png"))); // NOI18N
-        jLabel5.setText("jLabel5");
-
-        javax.swing.GroupLayout PaqueregisLayout = new javax.swing.GroupLayout(Paqueregis);
-        Paqueregis.setLayout(PaqueregisLayout);
-        PaqueregisLayout.setHorizontalGroup(
-            PaqueregisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PaqueregisLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lbl_paqueregis, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(PaqueregisLayout.createSequentialGroup()
-                .addGap(88, 88, 88)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        PaqueregisLayout.setVerticalGroup(
-            PaqueregisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PaqueregisLayout.createSequentialGroup()
-                .addGap(91, 91, 91)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
-                .addComponent(lbl_paqueregis)
-                .addContainerGap())
-        );
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        Paqueregis.add(jLabel5, gridBagConstraints);
 
         jPanel6.add(Paqueregis);
+
+        RastrePaque.setBackground(new java.awt.Color(255, 255, 0));
+        RastrePaque.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        RastrePaque.setForeground(new java.awt.Color(0, 0, 0));
+        RastrePaque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        RastrePaque.setMaximumSize(new java.awt.Dimension(260, 260));
+        RastrePaque.setMinimumSize(new java.awt.Dimension(260, 260));
+        RastrePaque.setPreferredSize(new java.awt.Dimension(260, 260));
+        RastrePaque.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                RastrePaqueMouseClicked(evt);
+            }
+        });
+        RastrePaque.setLayout(new java.awt.GridBagLayout());
+
+        lbl_rastrepaque.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lbl_rastrepaque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_rastrepaque.setText("<html><p style='text-align: center'>Rastrear Paquete</p><html>");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        RastrePaque.add(lbl_rastrepaque, gridBagConstraints);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Rastrear paquete.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        RastrePaque.add(jLabel4, gridBagConstraints);
+
+        jPanel6.add(RastrePaque);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
