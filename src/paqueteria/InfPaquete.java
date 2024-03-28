@@ -77,12 +77,10 @@ public class InfPaquete extends javax.swing.JFrame {
 
         jLabel1.setBackground(java.awt.Color.white);
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        jLabel1.setForeground(java.awt.Color.black);
         jLabel1.setText("Paquete:");
 
-        jTextField1.setBackground(java.awt.Color.white);
         jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jTextField1.setForeground(java.awt.Color.black);
+        jTextField1.setText("9a0a3ce1-27f5-44db-aa38-a08dbfa5676b");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -111,7 +109,7 @@ public class InfPaquete extends javax.swing.JFrame {
                 .addGap(31, 31, 31)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 460, Short.MAX_VALUE)
+                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 458, Short.MAX_VALUE)
                 .addGap(99, 99, 99)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(16, 16, 16))
@@ -140,16 +138,12 @@ public class InfPaquete extends javax.swing.JFrame {
 
         jLabel2.setBackground(java.awt.Color.white);
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        jLabel2.setForeground(java.awt.Color.black);
         jLabel2.setText("Detalles:");
 
         jLabel3.setBackground(java.awt.Color.white);
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel3.setForeground(java.awt.Color.black);
         jLabel3.setText("Nombre del Destinatario:");
 
-        jTextField2.setBackground(java.awt.Color.white);
-        jTextField2.setForeground(java.awt.Color.black);
         jTextField2.setText("Josefa Ortiz de Dominguez");
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,8 +151,6 @@ public class InfPaquete extends javax.swing.JFrame {
             }
         });
 
-        jTextField3.setBackground(java.awt.Color.white);
-        jTextField3.setForeground(java.awt.Color.black);
         jTextField3.setText("La ciudad prohibida");
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -168,11 +160,8 @@ public class InfPaquete extends javax.swing.JFrame {
 
         jLabel4.setBackground(java.awt.Color.white);
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel4.setForeground(java.awt.Color.black);
         jLabel4.setText("Dirección de Destino:");
 
-        jTextField4.setBackground(java.awt.Color.white);
-        jTextField4.setForeground(java.awt.Color.black);
         jTextField4.setText("Josefa Ortiz de Dominguez");
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -182,16 +171,12 @@ public class InfPaquete extends javax.swing.JFrame {
 
         jLabel5.setBackground(java.awt.Color.white);
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel5.setForeground(java.awt.Color.black);
         jLabel5.setText("Nombre del Mensajero:");
 
         jLabel6.setBackground(java.awt.Color.white);
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel6.setForeground(java.awt.Color.black);
         jLabel6.setText("Ciudad Actual:");
 
-        jTextField5.setBackground(java.awt.Color.white);
-        jTextField5.setForeground(java.awt.Color.black);
         jTextField5.setText("Josefa Ortiz de Dominguez");
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -199,8 +184,6 @@ public class InfPaquete extends javax.swing.JFrame {
             }
         });
 
-        jTextField6.setBackground(java.awt.Color.white);
-        jTextField6.setForeground(java.awt.Color.black);
         jTextField6.setText("Josefa Ortiz de Dominguez");
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -210,26 +193,20 @@ public class InfPaquete extends javax.swing.JFrame {
 
         jLabel7.setBackground(java.awt.Color.white);
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel7.setForeground(java.awt.Color.black);
         jLabel7.setText("Ciudad de Origen:");
 
         jLabel8.setBackground(java.awt.Color.white);
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel8.setForeground(java.awt.Color.black);
         jLabel8.setText("Descripción del Paquete:");
 
         jLabel9.setBackground(java.awt.Color.white);
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel9.setForeground(java.awt.Color.black);
         jLabel9.setText("Fecha Estimada de Entrega:");
 
         jLabel10.setBackground(java.awt.Color.white);
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel10.setForeground(java.awt.Color.black);
         jLabel10.setText("Fecha Actual:");
 
-        jTextField7.setBackground(java.awt.Color.white);
-        jTextField7.setForeground(java.awt.Color.black);
         jTextField7.setText("Josefa Ortiz de Dominguez");
         jTextField7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -237,8 +214,6 @@ public class InfPaquete extends javax.swing.JFrame {
             }
         });
 
-        jTextField8.setBackground(java.awt.Color.white);
-        jTextField8.setForeground(java.awt.Color.black);
         jTextField8.setText("DD/MM/AAAA HH:MM:SS UTC-6");
         jTextField8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -246,8 +221,6 @@ public class InfPaquete extends javax.swing.JFrame {
             }
         });
 
-        jTextField9.setBackground(java.awt.Color.white);
-        jTextField9.setForeground(java.awt.Color.black);
         jTextField9.setText("DD/MM/AAAA HH:MM:SS UTC-6");
         jTextField9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -260,25 +233,18 @@ public class InfPaquete extends javax.swing.JFrame {
 
         jLabel11.setBackground(java.awt.Color.white);
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel11.setForeground(java.awt.Color.black);
         jLabel11.setText("Estado Actual:");
 
-        jTextField10.setBackground(java.awt.Color.white);
-        jTextField10.setForeground(java.awt.Color.black);
         jTextField10.setText("En trayecto");
 
         jLabel12.setBackground(java.awt.Color.white);
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel12.setForeground(java.awt.Color.black);
         jLabel12.setText("Ultimo Evento:");
 
         jLabel13.setBackground(java.awt.Color.white);
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel13.setForeground(java.awt.Color.black);
         jLabel13.setText("Fecha Ultimo Evento:");
 
-        jTextField11.setBackground(java.awt.Color.white);
-        jTextField11.setForeground(java.awt.Color.black);
         jTextField11.setText("Salida de Centro de Distribuición local");
         jTextField11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -286,8 +252,6 @@ public class InfPaquete extends javax.swing.JFrame {
             }
         });
 
-        jTextField12.setBackground(java.awt.Color.white);
-        jTextField12.setForeground(java.awt.Color.black);
         jTextField12.setText("Benito Benavidez");
         jTextField12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -295,8 +259,6 @@ public class InfPaquete extends javax.swing.JFrame {
             }
         });
 
-        jTextField13.setBackground(java.awt.Color.white);
-        jTextField13.setForeground(java.awt.Color.black);
         jTextField13.setText("Roberto Piña");
         jTextField13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -304,8 +266,6 @@ public class InfPaquete extends javax.swing.JFrame {
             }
         });
 
-        jTextField14.setBackground(java.awt.Color.white);
-        jTextField14.setForeground(java.awt.Color.black);
         jTextField14.setText("DD/MM/AAAA HH:MM:SS UTC-6");
         jTextField14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -313,8 +273,6 @@ public class InfPaquete extends javax.swing.JFrame {
             }
         });
 
-        jTextField15.setBackground(java.awt.Color.white);
-        jTextField15.setForeground(java.awt.Color.black);
         jTextField15.setText("Juarez");
         jTextField15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -324,32 +282,24 @@ public class InfPaquete extends javax.swing.JFrame {
 
         jLabel14.setBackground(java.awt.Color.white);
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        jLabel14.setForeground(java.awt.Color.black);
         jLabel14.setText("Estado:");
 
         jLabel15.setBackground(java.awt.Color.white);
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel15.setForeground(java.awt.Color.black);
         jLabel15.setText("Autor Ultimo Evento:");
 
         jLabel16.setBackground(java.awt.Color.white);
         jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel16.setForeground(java.awt.Color.black);
         jLabel16.setText("Destinatario:");
 
         jLabel17.setBackground(java.awt.Color.white);
         jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel17.setForeground(java.awt.Color.black);
         jLabel17.setText("Ciudad Ultimo Evento:");
 
-        jButton2.setBackground(java.awt.Color.white);
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton2.setForeground(java.awt.Color.black);
         jButton2.setText("Actualizar");
 
-        jButton3.setBackground(java.awt.Color.white);
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton3.setForeground(java.awt.Color.black);
         jButton3.setText("Actualizar");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -363,7 +313,7 @@ public class InfPaquete extends javax.swing.JFrame {
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
                             .addComponent(jLabel13)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jTextField14))
+                            .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
                             .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(30, 30, 30)
@@ -379,7 +329,7 @@ public class InfPaquete extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
                             .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(15, 15, 15)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
