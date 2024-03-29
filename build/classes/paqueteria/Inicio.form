@@ -115,7 +115,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/paqueteria/Actualizar estado de paquete.png"/>
+                      <Image iconType="3" name="/paqueteria/assets/svgtopng/actualizar.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -174,7 +174,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/paqueteria/Registrar paquete.png"/>
+                      <Image iconType="3" name="/paqueteria/assets/svgtopng/registro.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -233,7 +233,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel5">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/paqueteria/Paquetes registrados.png"/>
+                      <Image iconType="3" name="/paqueteria/assets/svgtopng/inventario.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -295,7 +295,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/paqueteria/Rastrear paquete.png"/>
+                      <Image iconType="3" name="/paqueteria/assets/svgtopng/rastreo.png"/>
                     </Property>
                   </Properties>
                   <Constraints>

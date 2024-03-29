@@ -75,7 +75,7 @@ public class Inicio extends javax.swing.JFrame {
         gridBagConstraints.gridy = 0;
         ActuaEstad.add(lbl_actuaestad, gridBagConstraints);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Actualizar estado de paquete.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/assets/svgtopng/actualizar.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -104,7 +104,7 @@ public class Inicio extends javax.swing.JFrame {
         gridBagConstraints.gridy = 0;
         RegisPaque.add(lbl_regispaque, gridBagConstraints);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Registrar paquete.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/assets/svgtopng/registro.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -134,7 +134,7 @@ public class Inicio extends javax.swing.JFrame {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         Paqueregis.add(lbl_paqueregis, gridBagConstraints);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Paquetes registrados.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/assets/svgtopng/inventario.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -165,7 +165,7 @@ public class Inicio extends javax.swing.JFrame {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         RastrePaque.add(lbl_rastrepaque, gridBagConstraints);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/Rastrear paquete.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/assets/svgtopng/rastreo.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
