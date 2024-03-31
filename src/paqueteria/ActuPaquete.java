@@ -11,6 +11,15 @@ package paqueteria;
  */
 public class ActuPaquete extends javax.swing.JFrame {
 
+    private static ActuPaquete actuPaquete;
+    
+    static ActuPaquete getInstance(){
+        if (actuPaquete == null) {
+            actuPaquete = new ActuPaquete();
+        }
+        return actuPaquete;
+    }
+    
     /**
      * Creates new form ActuPaquete
      */
@@ -318,14 +327,17 @@ public class ActuPaquete extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox3ActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        dispose();
+        Inicio inicio = Inicio.getInstance();
+        inicio.setVisible(true);
+        inicio.requestFocus();
+
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        PRegistrados pRegistrados = new PRegistrados();
+        PRegistrados pRegistrados = PRegistrados.getInstance();
         pRegistrados.setVisible(true);
         pRegistrados.requestFocus();
-        dispose();
+
     }//GEN-LAST:event_jButton2MouseClicked
 
     /**

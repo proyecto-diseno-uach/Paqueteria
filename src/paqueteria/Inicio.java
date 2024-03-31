@@ -11,13 +11,22 @@ package paqueteria;
  */
 public class Inicio extends javax.swing.JFrame {
 
+    private static Inicio inicio;
+    
+    static Inicio getInstance(){
+        if (inicio == null) {
+            inicio = new Inicio();
+        }
+        return inicio;
+    }
+    
     /**
      * Creates new form Pregistrados
      */
     public Inicio() {
         initComponents();
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -30,15 +39,15 @@ public class Inicio extends javax.swing.JFrame {
 
         jPanel3 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
-        ActuaEstad = new javax.swing.JPanel();
-        lbl_actuaestad = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        RegisPaque = new javax.swing.JPanel();
-        lbl_regispaque = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         Paqueregis = new javax.swing.JPanel();
         lbl_paqueregis = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        RegisPaque = new javax.swing.JPanel();
+        lbl_regispaque = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        ActuaEstad = new javax.swing.JPanel();
+        lbl_actuaestad = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         RastrePaque = new javax.swing.JPanel();
         lbl_rastrepaque = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -50,67 +59,6 @@ public class Inicio extends javax.swing.JFrame {
         jPanel3.setLayout(new java.awt.GridBagLayout());
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 42, 42));
-
-        ActuaEstad.setBackground(new java.awt.Color(51, 255, 51));
-        ActuaEstad.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        ActuaEstad.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        ActuaEstad.setFocusCycleRoot(true);
-        ActuaEstad.setMaximumSize(new java.awt.Dimension(260, 260));
-        ActuaEstad.setMinimumSize(new java.awt.Dimension(260, 260));
-        ActuaEstad.setPreferredSize(new java.awt.Dimension(260, 260));
-        ActuaEstad.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ActuaEstadMouseClicked(evt);
-            }
-        });
-        ActuaEstad.setLayout(new java.awt.GridBagLayout());
-
-        lbl_actuaestad.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        lbl_actuaestad.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_actuaestad.setText("<html><p style='text-align: center'>Actualizar Estado de Paquete</p><html>");
-        lbl_actuaestad.setToolTipText("Actualizar Estado de Paquete");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        ActuaEstad.add(lbl_actuaestad, gridBagConstraints);
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/assets/svgtopng/actualizar.png"))); // NOI18N
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        ActuaEstad.add(jLabel3, gridBagConstraints);
-
-        jPanel6.add(ActuaEstad);
-
-        RegisPaque.setBackground(new java.awt.Color(153, 102, 0));
-        RegisPaque.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        RegisPaque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        RegisPaque.setMaximumSize(new java.awt.Dimension(260, 260));
-        RegisPaque.setMinimumSize(new java.awt.Dimension(260, 260));
-        RegisPaque.setPreferredSize(new java.awt.Dimension(260, 260));
-        RegisPaque.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                RegisPaqueMouseClicked(evt);
-            }
-        });
-        RegisPaque.setLayout(new java.awt.GridBagLayout());
-
-        lbl_regispaque.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        lbl_regispaque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_regispaque.setText("<html><p style='text-align: center'>Registrar Paquete</p><html>");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        RegisPaque.add(lbl_regispaque, gridBagConstraints);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/assets/svgtopng/registro.png"))); // NOI18N
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        RegisPaque.add(jLabel2, gridBagConstraints);
-
-        jPanel6.add(RegisPaque);
 
         Paqueregis.setBackground(new java.awt.Color(102, 102, 255));
         Paqueregis.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -142,9 +90,69 @@ public class Inicio extends javax.swing.JFrame {
 
         jPanel6.add(Paqueregis);
 
+        RegisPaque.setBackground(new java.awt.Color(153, 102, 0));
+        RegisPaque.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        RegisPaque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        RegisPaque.setMaximumSize(new java.awt.Dimension(260, 260));
+        RegisPaque.setMinimumSize(new java.awt.Dimension(260, 260));
+        RegisPaque.setPreferredSize(new java.awt.Dimension(260, 260));
+        RegisPaque.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                RegisPaqueMouseClicked(evt);
+            }
+        });
+        RegisPaque.setLayout(new java.awt.GridBagLayout());
+
+        lbl_regispaque.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lbl_regispaque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_regispaque.setText("<html><p style='text-align: center'>Registrar Paquete</p><html>");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        RegisPaque.add(lbl_regispaque, gridBagConstraints);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/assets/svgtopng/registro.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        RegisPaque.add(jLabel2, gridBagConstraints);
+
+        jPanel6.add(RegisPaque);
+
+        ActuaEstad.setBackground(new java.awt.Color(51, 255, 51));
+        ActuaEstad.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        ActuaEstad.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ActuaEstad.setFocusCycleRoot(true);
+        ActuaEstad.setMaximumSize(new java.awt.Dimension(260, 260));
+        ActuaEstad.setMinimumSize(new java.awt.Dimension(260, 260));
+        ActuaEstad.setPreferredSize(new java.awt.Dimension(260, 260));
+        ActuaEstad.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ActuaEstadMouseClicked(evt);
+            }
+        });
+        ActuaEstad.setLayout(new java.awt.GridBagLayout());
+
+        lbl_actuaestad.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lbl_actuaestad.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_actuaestad.setText("<html><p style='text-align: center'>Actualizar Estado de Paquete</p><html>");
+        lbl_actuaestad.setToolTipText("Actualizar Estado de Paquete");
+        lbl_actuaestad.setPreferredSize(new java.awt.Dimension(100, 16));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        ActuaEstad.add(lbl_actuaestad, gridBagConstraints);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paqueteria/assets/svgtopng/actualizar.png"))); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        ActuaEstad.add(jLabel3, gridBagConstraints);
+
+        jPanel6.add(ActuaEstad);
+
         RastrePaque.setBackground(new java.awt.Color(255, 255, 0));
         RastrePaque.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        RastrePaque.setForeground(new java.awt.Color(0, 0, 0));
         RastrePaque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         RastrePaque.setMaximumSize(new java.awt.Dimension(260, 260));
         RastrePaque.setMinimumSize(new java.awt.Dimension(260, 260));
@@ -194,27 +202,31 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void RastrePaqueMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RastrePaqueMouseClicked
-        Ltiempo2 ltiempo2 = new Ltiempo2();
+        Ltiempo2 ltiempo2 = Ltiempo2.getInstance();
         ltiempo2.setVisible(true);
         ltiempo2.requestFocus();
+
     }//GEN-LAST:event_RastrePaqueMouseClicked
 
     private void ActuaEstadMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ActuaEstadMouseClicked
-        ActuPaquete actuPaquete = new ActuPaquete();
+        ActuPaquete actuPaquete = ActuPaquete.getInstance();
         actuPaquete.setVisible(true);
         actuPaquete.requestFocus();
+
     }//GEN-LAST:event_ActuaEstadMouseClicked
 
     private void PaqueregisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PaqueregisMouseClicked
-        PRegistrados pRegistrados = new PRegistrados();
+        PRegistrados pRegistrados = PRegistrados.getInstance();
         pRegistrados.setVisible(true);
         pRegistrados.requestFocus();
+
     }//GEN-LAST:event_PaqueregisMouseClicked
 
     private void RegisPaqueMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegisPaqueMouseClicked
-        NUpaquete nUpaquetes = new NUpaquete();
+        NUpaquete nUpaquetes = NUpaquete.getInstance();
         nUpaquetes.setVisible(true);
         nUpaquetes.requestFocus();
+
     }//GEN-LAST:event_RegisPaqueMouseClicked
 
     /**

@@ -11,6 +11,15 @@ package paqueteria;
  */
 public class Ltiempo2 extends javax.swing.JFrame {
 
+    private static Ltiempo2 ltiempo2;
+    
+    static Ltiempo2 getInstance(){
+        if (ltiempo2 == null) {
+            ltiempo2 = new Ltiempo2();
+        }
+        return ltiempo2;
+    }
+    
     /**
      * Creates new form Ltiempo1
      */
@@ -159,21 +168,24 @@ public class Ltiempo2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
-        Ltiempo1 ltiempo1 = new Ltiempo1();
+        Ltiempo1 ltiempo1 = Ltiempo1.getInstance();
         ltiempo1.setVisible(true);
         ltiempo1.requestFocus();
-        dispose();
+
     }//GEN-LAST:event_jTextField1KeyPressed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        dispose();
+        Inicio inicio = Inicio.getInstance();
+        inicio.setVisible(true);
+        inicio.requestFocus();
+
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        Ltiempo1 ltiempo1 = new Ltiempo1();
+        Ltiempo1 ltiempo1 = Ltiempo1.getInstance();
         ltiempo1.setVisible(true);
         ltiempo1.requestFocus();
-        dispose();
+
     }//GEN-LAST:event_jButton2MouseClicked
 
     /**
