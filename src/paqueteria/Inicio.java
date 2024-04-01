@@ -59,6 +59,9 @@ public class Inicio extends javax.swing.JFrame {
         jPanel3.setLayout(new java.awt.GridBagLayout());
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
+        java.awt.FlowLayout flowLayout1 = new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 42, 42);
+        flowLayout1.setAlignOnBaseline(true);
+        jPanel6.setLayout(flowLayout1);
 
         Paqueregis.setBackground(new java.awt.Color(102, 102, 255));
         Paqueregis.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -184,7 +187,7 @@ public class Inicio extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 48;
         jPanel3.add(jPanel6, gridBagConstraints);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
