@@ -838,101 +838,85 @@ public class PRegistrados extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        Inicio inicio = Inicio.getInstance();
-        inicio.setVisible(true);
-        inicio.requestFocus();
-        
+        dispose();
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
         InfPaquete infPaquete = InfPaquete.getInstance();
         infPaquete.setVisible(true);
         infPaquete.requestFocus();
-        
     }//GEN-LAST:event_jPanel6MouseClicked
 
     private void jPanel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseClicked
         InfPaquete infPaquete = InfPaquete.getInstance();
         infPaquete.setVisible(true);
         infPaquete.requestFocus();
-        
     }//GEN-LAST:event_jPanel9MouseClicked
 
     private void jPanel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel12MouseClicked
         InfPaquete infPaquete = InfPaquete.getInstance();
         infPaquete.setVisible(true);
         infPaquete.requestFocus();
-        
     }//GEN-LAST:event_jPanel12MouseClicked
 
     private void jPanel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel15MouseClicked
         InfPaquete infPaquete = InfPaquete.getInstance();
         infPaquete.setVisible(true);
         infPaquete.requestFocus();
-        
     }//GEN-LAST:event_jPanel15MouseClicked
 
     private void jPanel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel18MouseClicked
         InfPaquete infPaquete = InfPaquete.getInstance();
         infPaquete.setVisible(true);
         infPaquete.requestFocus();
-        
     }//GEN-LAST:event_jPanel18MouseClicked
 
     private void jPanel21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel21MouseClicked
         InfPaquete infPaquete = InfPaquete.getInstance();
         infPaquete.setVisible(true);
         infPaquete.requestFocus();
-        
     }//GEN-LAST:event_jPanel21MouseClicked
 
     private void jPanel24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel24MouseClicked
         InfPaquete infPaquete = InfPaquete.getInstance();
         infPaquete.setVisible(true);
         infPaquete.requestFocus();
-        
     }//GEN-LAST:event_jPanel24MouseClicked
 
     private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
         ActuPaquete actuPaquete = ActuPaquete.getInstance();
         actuPaquete.setVisible(true);
         actuPaquete.requestFocus();
-        
     }//GEN-LAST:event_jPanel8MouseClicked
 
     private void jPanel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel10MouseClicked
         ActuPaquete actuPaquete = ActuPaquete.getInstance();
         actuPaquete.setVisible(true);
         actuPaquete.requestFocus();
-        
     }//GEN-LAST:event_jPanel10MouseClicked
 
     private void jPanel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel13MouseClicked
         ActuPaquete actuPaquete = ActuPaquete.getInstance();
         actuPaquete.setVisible(true);
         actuPaquete.requestFocus();
-        
     }//GEN-LAST:event_jPanel13MouseClicked
 
     private void jPanel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel16MouseClicked
         ActuPaquete actuPaquete = ActuPaquete.getInstance();
         actuPaquete.setVisible(true);
         actuPaquete.requestFocus();
-        
     }//GEN-LAST:event_jPanel16MouseClicked
 
     private void jPanel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel19MouseClicked
         ActuPaquete actuPaquete = ActuPaquete.getInstance();
         actuPaquete.setVisible(true);
         actuPaquete.requestFocus();
-        
     }//GEN-LAST:event_jPanel19MouseClicked
 
     private void jPanel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel22MouseClicked
         ActuPaquete actuPaquete = ActuPaquete.getInstance();
         actuPaquete.setVisible(true);
         actuPaquete.requestFocus();
-        
     }//GEN-LAST:event_jPanel22MouseClicked
 
     private void jPanel25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel25MouseClicked

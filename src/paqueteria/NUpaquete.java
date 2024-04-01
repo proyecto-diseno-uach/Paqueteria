@@ -433,17 +433,14 @@ public class NUpaquete extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField4ActionPerformed
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        Inicio inicio = Inicio.getInstance();
-        inicio.setVisible(true);
-        inicio.requestFocus();
-
+        dispose();
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         PRegistrados pRegistrados = PRegistrados.getInstance();
         pRegistrados.setVisible(true);
         pRegistrados.requestFocus();
-
+        dispose();
     }//GEN-LAST:event_jButton1MouseClicked
 
     /**

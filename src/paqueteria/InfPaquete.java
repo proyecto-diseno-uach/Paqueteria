@@ -553,7 +553,7 @@ public class InfPaquete extends javax.swing.JFrame {
         PRegistrados pRegistrados = PRegistrados.getInstance();
         pRegistrados.setVisible(true);
         pRegistrados.requestFocus();
-        
+        dispose();
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
@@ -572,7 +572,7 @@ public class InfPaquete extends javax.swing.JFrame {
         PRegistrados pRegistrados = PRegistrados.getInstance();
         pRegistrados.setVisible(true);
         pRegistrados.requestFocus();
-
+        dispose();
     }//GEN-LAST:event_jButton3MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked

@@ -171,21 +171,18 @@ public class Ltiempo2 extends javax.swing.JFrame {
         Ltiempo1 ltiempo1 = Ltiempo1.getInstance();
         ltiempo1.setVisible(true);
         ltiempo1.requestFocus();
-
+        dispose();
     }//GEN-LAST:event_jTextField1KeyPressed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        Inicio inicio = Inicio.getInstance();
-        inicio.setVisible(true);
-        inicio.requestFocus();
-
+        dispose();
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         Ltiempo1 ltiempo1 = Ltiempo1.getInstance();
         ltiempo1.setVisible(true);
         ltiempo1.requestFocus();
-
+        dispose();
     }//GEN-LAST:event_jButton2MouseClicked
 
     /**

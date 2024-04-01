@@ -327,17 +327,14 @@ public class ActuPaquete extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox3ActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        Inicio inicio = Inicio.getInstance();
-        inicio.setVisible(true);
-        inicio.requestFocus();
-
+        dispose();
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         PRegistrados pRegistrados = PRegistrados.getInstance();
         pRegistrados.setVisible(true);
         pRegistrados.requestFocus();
-
+        dispose();
     }//GEN-LAST:event_jButton2MouseClicked
 
     /**

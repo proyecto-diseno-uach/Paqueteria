@@ -205,28 +205,24 @@ public class Inicio extends javax.swing.JFrame {
         Ltiempo2 ltiempo2 = Ltiempo2.getInstance();
         ltiempo2.setVisible(true);
         ltiempo2.requestFocus();
-
     }//GEN-LAST:event_RastrePaqueMouseClicked
 
     private void ActuaEstadMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ActuaEstadMouseClicked
         ActuPaquete actuPaquete = ActuPaquete.getInstance();
         actuPaquete.setVisible(true);
         actuPaquete.requestFocus();
-
     }//GEN-LAST:event_ActuaEstadMouseClicked
 
     private void PaqueregisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PaqueregisMouseClicked
         PRegistrados pRegistrados = PRegistrados.getInstance();
         pRegistrados.setVisible(true);
         pRegistrados.requestFocus();
-
     }//GEN-LAST:event_PaqueregisMouseClicked
 
     private void RegisPaqueMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegisPaqueMouseClicked
         NUpaquete nUpaquetes = NUpaquete.getInstance();
         nUpaquetes.setVisible(true);
         nUpaquetes.requestFocus();
-
     }//GEN-LAST:event_RegisPaqueMouseClicked
 
     /**
