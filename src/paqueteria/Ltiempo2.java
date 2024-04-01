@@ -47,6 +47,7 @@ public class Ltiempo2 extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel1.setMaximumSize(new java.awt.Dimension(32767, 71));
 
